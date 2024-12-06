@@ -18,7 +18,8 @@ Funcionalidades
 Instalação de Dependências
 
   - Certifique-se de que o Pyhton esteja instalado no seu computador. (De preferência, baixe-o pelo microsoft store)
-  - Após isso clone o diretório -> git clone https://github.com/DuuHwp/MatchGames.git <-
+  - Após isso clone o diretório:
+    git clone https://github.com/DuuHwp/MatchGames.git
   - Navegue até o diretório do projeto:
       cd Trabalho-Integrador
 
