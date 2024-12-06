@@ -19,23 +19,32 @@ Instalação de Dependências
 
   - Certifique-se de que o Pyhton esteja instalado no seu computador. (De preferência, baixe-o pelo microsoft store)
   - Após isso clone o diretório:
-    git clone https://github.com/DuuHwp/MatchGames.git
+```bash  
+  git clone https://github.com/DuuHwp/MatchGames.git
+```
   - Navegue até o diretório do projeto:
-      cd Trabalho-Integrador
-
+```bash
+      cd "Trabalho de Sexta-Feira"
+```
   - Crie um ambiente virtual para o projeto e ative-o:
+```bash
       python -m venv venv
       *source venv/bin/activate # no Linux/macOS
       *venv\Scripts\activate # no Windows
-
+```
   - Instale as dependências necessárias com:
+```bash
       pip install -r requirements.txt
-
+```
 Passo a Passo para Rodar a Aplicação
 
   - Utilize a seguinte URI para conectar com o banco de dados:
+```bash
       postgresql://postgresaula:PostgresAula123!@postgres-aula.cuebxlhckhcy.us-east-1.rds.amazonaws.com:5432/postgresaula
+```
   - Execute a aplicação localmente:
+```bash
       python app.py
+```
   - Abra o navegador e acesse github.com/
   - A interface será carregada, e você poderá selecionar o jogo desejado para verificar se a configuração roda em seu computador.
