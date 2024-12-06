@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/styles/reset.css">
+    <link rel="stylesheet" href="../static/styles/re4.css">
+    <title>Resident Evil 4: Remake</title>
+</head>
+<body>
+    <button class="botao-voltar" onclick="window.location.href='/';">
+        &#8592;
+    </button>
+    <h1 class="titulo">Resident Evil 4: Remake</h1>
+    <div class="container-botoes">    
+        <button class="button" onclick="toggleBox('texto1', this)">
+            REQUISITOS MÍNIMOS <span class="seta">&#9654;</span>
+        </button>
+        <div id="texto1" class="caixa-texto">
+            <p> Requer um processador e sistema operacional de 64 bits</p>
+            <br>
+            <p> Sistema Operacional: Windows 10 - 64-bit</p>
+            <br>
+            <p> Processador: AMD Ryzen 3 1200 / Intel Core i5-7500</p>
+            <br>
+            <p> Memória RAM: 8 GB de RAM</p>
+            <br>
+            <p> Placa de vídeo: AMD Radeon RX 560 with 4GB VRAM / NVIDIA GeForce GTX 1050 Ti with 4GB VRAM</p>
+            <br>
+            <p> Rede: Conexão de internet banda larga</p>
+            <br>
+            <p> Armazenamento: 70 GB de espaço disponível</p>
+            <br>
+            <p> DirectX: Versão 12</p>
+            <br>
+            <p> Desempenho aproximado(setado em performance): 1080p/45fps. ・A taxa de quadros pode cair em cenas que exigem recursos visuais mais pesados. ・O suporte ao traçado de raios requer uma placa AMD Radeon RX 6700 XT ou NVIDIA GeForce RTX 2060.</p>
+            
+        </div>
+    
+        <button class="button" onclick="toggleBox('texto2', this)">
+            REQUISITOS RECOMENDADOS <span class="seta">&#9654;</span>
+        </button>
+        <div id="texto2" class="caixa-texto">
+            <p> Requer um processador e sistema operacional de 64 bits</p>
+            <br>
+            <p> Sistema Operacional: Windows 10 - 64-bit</p>
+            <br>
+            <p> Processador: AMD Ryzen 5 3600 / Intel Core i7 8700</p>
+            <br>
+            <p> Memória RAM: 16 GB de RAM</p>
+            <br>
+            <p> Placa de vídeo: AMD Radeon RX 5700 / NVIDIA GeForce GTX 1070</p>
+            <br>
+            <p> Rede: Conexão de internet banda larga</p>
+            <br>
+            <p> Armazenamento: 70 GB de espaço disponível</p>
+            <br>
+            <p> DirectX: Versão 12</p>
+            <br>
+            <p> Desempenho aproximado: 1080p/60fps. ・A taxa de quadros pode cair em cenas que exigem recursos visuais mais pesados. ・O suporte ao traçado de raios requer uma placa AMD Radeon RX 6700 XT ou NVIDIA GeForce RTX 2070.</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleBox(boxId, button) {
+            const caixas = document.querySelectorAll('.caixa-texto');
+            const setas = document.querySelectorAll('.button .seta');
+            const box = document.getElementById(boxId);
+            const seta = button.querySelector('.seta');
+        
+            if (box.classList.contains('show')) {
+                box.classList.remove('show');
+                seta.style.transform = 'rotate(0deg)';
+            } else {
+                caixas.forEach(caixa => caixa.classList.remove('show'));
+                setas.forEach(seta => seta.style.transform = 'rotate(0deg)');
+                box.classList.add('show');
+                seta.style.transform = 'rotate(90deg)'; 
+            }
+        }
+    </script>
+</body>
+</html>

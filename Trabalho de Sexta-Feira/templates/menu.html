@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MATCH GAMES</title>
+    <link rel="stylesheet" href="../static/styles/reset.css">
+    <link rel="stylesheet" href="../static/styles/menu.css">
+    <title>Match Games</title>
+</head>
+<body>
+    <img class="logo" src="./static/Assets/logoNovaAzul.png" alt="Descrição da imagem">
+    <div class="custom-select">
+        <div class="selected-option">Selecione um jogo</div>
+        <ul class="options">
+          <li data-value="Red Dead Redemption 2">Red Dead Redemption 2</li>
+          <li data-value="Call of Duty: Warzone">Call of Duty: Warzone</li>
+          <li data-value="The Witcher 3">The Witcher 3</li>
+          <li data-value="Cyberpunk 2077">Cyberpunk 2077</li>
+          <li data-value="Resident Evil 4: Remake">Resident Evil 4: Remake</li>
+          <li data-value="Fobia - St. Dinfna Hotel">Fobia - St. Dinfna Hotel</li>
+          <li data-value="A.I.L.A">A.I.L.A</li>
+        </ul>
+    </div>    
+    <div class="icon-container">
+        <div class="icone-ajuda">?</div> <!-- Ícone com ponto de interrogação -->
+    </div>
+
+    <p id="resultado"></p>
+    
+    <button id="redirecionarBotao">Selecionar</button>
+
+    <script>
+        let selectedOption;
+
+        document.addEventListener("DOMContentLoaded", () => {
+            selectedOption = document.querySelector(".selected-option");
+            const options = document.querySelector(".options");
+            const optionItems = document.querySelectorAll(".options li");
+
+            selectedOption.addEventListener("click", () => {
+                options.classList.toggle("show");
+            });
+
+            optionItems.forEach((item) => {
+                item.addEventListener("click", () => {
+                    selectedOption.textContent = item.textContent;
+                    options.classList.remove("show");
+                });
+            });
+
+            document.addEventListener("click", (event) => {
+                if (!event.target.closest(".custom-select")) {
+                    options.classList.remove("show");
+                }
+            });
+            document.querySelector(".icone-ajuda").addEventListener("click", () => {
+                window.location.href = "ajuda.html";  // Altere para a página desejada
+            });
+        });
+        
+        document.getElementById("redirecionarBotao").addEventListener("click", () => {
+            const selectedGame = selectedOption.textContent.trim();  
+            if (selectedGame === "A.I.L.A") {
+                window.location.href = "aila.html";
+            } else if (selectedGame === "The Witcher 3") {
+                window.location.href = "witcher.html";
+            } else if (selectedGame === "Cyberpunk 2077") {
+                window.location.href = "cyberpunk.html";
+            } else if (selectedGame === "Call of Duty: Warzone") {
+                window.location.href = "cod.html";
+            } else if (selectedGame === "Resident Evil 4: Remake") {
+                window.location.href = "re4.html";
+            } else if (selectedGame === "Red Dead Redemption 2") {
+                window.location.href = "rd2.html";
+            } else if (selectedGame === "Fobia - St. Dinfna Hotel") {
+                window.location.href = "fobia.html";
+            } else {
+                alert("Por favor, selecione um jogo válido!");
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/styles/reset.css">
+    <link rel="stylesheet" href="../static/styles/witcher.css">
+    <title>The Witcher 3</title>
+</head>
+<body>
+    <button class="botao-voltar" onclick="window.location.href='/';">
+        &#8592;
+    </button>
+    <h1 class="titulo">The Witcher 3</h1>
+    <div class="container-botoes">    
+        <button class="button" onclick="toggleBox('texto1', this)">
+            REQUISITOS MÍNIMOS <span class="seta">&#9654;</span>
+        </button>
+        <div id="texto1" class="caixa-texto">
+            <p> Sistema Operacional: Windows 10 - 64-bit</p>
+            <br>
+            <p> Processador: Intel CPU Core i5-2500K 3.3GHz / AMD A10-5800K APU (3.8GHz)</p>
+            <br>
+            <p> Memória RAM: 6 GB de RAM</p>
+            <br>
+            <p> Placa de vídeo: Nvidia GPU GeForce GTX 660 / AMD GPU Radeon HD 7870</p>
+            <br>
+            <p> DirectX: Versão 11</p>
+            <br>
+            <p> Armazenamento: 50 GB de espaço disponível</p>
+        </div>
+    
+        <button class="button" onclick="toggleBox('texto2', this)">
+            REQUISITOS RECOMENDADOS <span class="seta">&#9654;</span>
+        </button>
+        <div id="texto2" class="caixa-texto">
+            <p> Sistema Operacional: Windows 10 - 64-bit</p>
+            <br>
+            <p> Processador: Intel Core i5-7400 / Ryzen 5 1600</p>
+            <br>
+            <p> Memória RAM: 8 GB de RAM</p>
+            <br>
+            <p> Placa de vídeo: Nvidia GTX 1070 / Radeon RX 480</p>
+            <br>
+            <p> DirectX: Versão 12</p>
+            <br>
+            <p> Armazenamento: 50 GB de espaço disponível</p>
+        </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleBox(boxId, button) {
+            const caixas = document.querySelectorAll('.caixa-texto');
+            const setas = document.querySelectorAll('.button .seta');
+            const box = document.getElementById(boxId);
+            const seta = button.querySelector('.seta');
+        
+            if (box.classList.contains('show')) {
+                box.classList.remove('show');
+                seta.style.transform = 'rotate(0deg)';
+            } else {
+                caixas.forEach(caixa => caixa.classList.remove('show'));
+                setas.forEach(seta => seta.style.transform = 'rotate(0deg)');
+                box.classList.add('show');
+                seta.style.transform = 'rotate(90deg)';
+            }
+        }
+    </script>
+</body>
+</html>
