@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sucesso</title>
+    <link rel="stylesheet" href="../static/styles/reset.css">
+    <link rel="stylesheet" href="../static/styles/sucesso.css">    
+    <script>
+        // Redireciona para a página inicial após 5 segundos
+        setTimeout(function() {
+            window.location.href = "/";
+        }, 10000); // 10 segundos
+    </script>
+</head>
+<body>
+    <img class="logo" src="./static/Assets/logoNovaAzul.png" alt="Descrição da imagem">
+    <div class="texto">
+        <h1>Informações enviadas com sucesso!</h1>
+        <p>Nome: {{ nome }}</p>
+        <p>E-mail: {{ email }}</p>
+        <p>Você será redirecionado para a página inicial em 10 segundos.</p>
+    </div>
+    <img class="logo" src="./static/Assets/pngwing.com.png" alt="Descrição da imagem">
+</body>
+</html>

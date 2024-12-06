@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MATCH GAMES</title>
+    <link rel="stylesheet" href="../static/styles/reset.css">
+    <link rel="stylesheet" href="../static/styles/ajuda.css">
+    <title>Match Games</title>
+</head>
+<body>
+    <button class="botao-voltar" onclick="window.location.href='/';">
+        &#8592;
+    </button>
+    <img class="logo" src="./static/Assets/logoNovaAzul.png" alt="Descrição da imagem">
+    <div class="tooltip">
+        <p>Informe seu nome completo e e-mail para mais informações</p>
+        <form action="/enviar" method="POST">
+            <label for="nome">Nome</label>
+            <input class="input_padrao" type="text" id="nome" name="nome" required placeholder="Seu nome completo">
+            
+            <label for="email">E-mail</label>
+            <input class="input_padrao" type="email" id="email" name="email" required placeholder="seuemail@dominio.com.br">
+            
+            <label for="mensagem">Mensagem</label>
+            <textarea class="input_padrao" id="mensagem" name="mensagem" required placeholder="Escreva sua mensagem"></textarea>
+            
+            <button class="enviar-btn" type="submit">Enviar</button>
+        </form>
+    </div>
+    <p id="resultado"></p>
+
+    <script>
+
+    </script>
+</body>
+</html>
