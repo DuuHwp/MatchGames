@@ -22,10 +22,8 @@ Instalação de Dependências
 ```bash  
   git clone https://github.com/DuuHwp/MatchGames.git
 ```
+  - Após isso Abra o Visual Studio Code e abra a abra na pasta do MatchGames
   - Navegue até o diretório do projeto:
-```bash
-      cd MatchGames
-```
 ```bash
       cd "Trabalho de Sexta-Feira"
 ```
