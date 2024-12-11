@@ -22,16 +22,11 @@ Instalação de Dependências
 ```bash  
   git clone https://github.com/DuuHwp/MatchGames.git
 ```
-  - Após isso Abra o Visual Studio Code e abra a abra na pasta do MatchGames
+  - Após isso Abra o Visual Studio Code e abra a abra na pasta do MatchGames.
+  - Abra o terminal integrado.
   - Navegue até o diretório do projeto:
 ```bash
       cd "Trabalho de Sexta-Feira"
-```
-  - Crie um ambiente virtual para o projeto e ative-o:
-```bash
-      python -m venv venv
-      *source venv/bin/activate # no Linux/macOS
-      *venv\Scripts\activate # no Windows
 ```
   - Instale as dependências necessárias com:
 ```bash
