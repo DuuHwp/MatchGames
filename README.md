@@ -32,12 +32,6 @@ Instalação de Dependências
 ```bash
       pip install -r requirements.txt
 ```
-Passo a Passo para Rodar a Aplicação
-
-  - Utilize a seguinte URI para conectar com o banco de dados:
-```bash
-      postgresql://postgresaula:PostgresAula123!@postgres-aula.cuebxlhckhcy.us-east-1.rds.amazonaws.com:5432/postgresaula
-```
   - Execute a aplicação localmente:
 ```bash
       python app.py
