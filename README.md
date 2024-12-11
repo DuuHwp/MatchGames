@@ -28,6 +28,10 @@ Instalação de Dependências
 ```bash
       cd "Trabalho de Sexta-Feira"
 ```
+  - Certifique-se de que o pip esteja instalado e/ou atualizado
+```
+  python -m pip install --upgrade pip
+```
   - Instale as dependências necessárias com:
 ```bash
       pip install -r requirements.txt
