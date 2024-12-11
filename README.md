@@ -24,6 +24,9 @@ Instalação de Dependências
 ```
   - Navegue até o diretório do projeto:
 ```bash
+      cd MatchGames
+```
+```bash
       cd "Trabalho de Sexta-Feira"
 ```
   - Crie um ambiente virtual para o projeto e ative-o:
