@@ -15,9 +15,26 @@ Funcionalidades
  - Descubra as requisições mínimas e recomendadas do jogo escolhido.
  - Envie uma mensagem via e-mail para tirar suas dúvidas.
 
+   Passo a passo para rodar a aplicação
+
 Instalação de Dependências
 
-  - Certifique-se de que o Pyhton esteja instalado no seu computador. (De preferência, baixe-o pelo microsoft store, caso esteja no Windows)
+  - Utilize o terminal do seu computador para poder começar o acesso. Agora insira a seguinte linha no terminal
+ ```bash
+ssh -i <caminho>/MatchGames/MGKey.pem ec2-user@52.54.104.182
+```
+  - Certifique-se de que seu sistema esteja atualizado:
+ ```bash
+sudo yum update -y
+```
+  - Instale o pip e o python se necessário:
+```bash
+sudo yum install python3 python3-pip -y
+```
+  - Instale o git
+```bash
+sudo yum install git -y
+```
   - Após isso clone o diretório no git:
 ```bash
 git clone https://github.com/DuuHwp/MatchGames.git
