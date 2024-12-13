@@ -55,6 +55,12 @@ python3 -m pip install --upgrade pip
 ```bash
 pip3 install -r requirements.txt
 ```
+```bash
+sudo yum install gcc python3-devel postgresql-devel -y
+```
+```bash
+pip3 install psycopg2
+```
   - Execute a aplicação localmente:
 ```bash
 python3 app.py
