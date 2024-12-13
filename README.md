@@ -19,7 +19,11 @@ Funcionalidades
 
 Instalação de Dependências
 
-  - Utilize o terminal do seu computador para poder começar o acesso. Agora insira a seguinte linha no terminal
+  - Utilize o git do seu computador para poder começar o acesso. Agora insira a seguinte linha no terminal
+  - Após isso clone o diretório no git:
+```bash
+git clone https://github.com/DuuHwp/MatchGames.git
+```
  ```bash
 ssh -i <caminho>/MatchGames/MGKey.pem ec2-user@52.54.104.182
 ```
@@ -34,10 +38,6 @@ sudo yum install python3 python3-pip -y
   - Instale o git
 ```bash
 sudo yum install git -y
-```
-  - Após isso clone o diretório no git:
-```bash
-git clone https://github.com/DuuHwp/MatchGames.git
 ```
   - Navegue até o diretório do projeto:
 ```bash
