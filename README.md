@@ -18,7 +18,7 @@ Funcionalidades
 Instalação de Dependências
 
   - Certifique-se de que o Pyhton esteja instalado no seu computador. (De preferência, baixe-o pelo microsoft store)
-  - Após isso clone o diretório:
+  - Após isso clone o diretório no git:
 ```bash
 git clone https://github.com/DuuHwp/MatchGames.git
 ```
@@ -40,5 +40,4 @@ pip install -r requirements.txt
 ```bash
 python app.py
 ```
-  - Abra o navegador e acesse github.com/
-  - A interface será carregada, e você poderá selecionar o jogo desejado para verificar se a configuração roda em seu computador.
+  - A aplicação será carregada no navegador, e você poderá usufruir de suas funcionalidades.
