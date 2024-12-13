@@ -17,27 +17,29 @@ Funcionalidades
 
 Instalação de Dependências
 
-  - Certifique-se de que o Pyhton esteja instalado no seu computador. (De preferência, baixe-o pelo microsoft store)
+  - Certifique-se de que o Pyhton esteja instalado no seu computador. (De preferência, baixe-o pelo microsoft store, caso esteja no Windows)
   - Após isso clone o diretório no git:
 ```bash
 git clone https://github.com/DuuHwp/MatchGames.git
 ```
-  - Após isso Abra o Visual Studio Code e abra a abra na pasta do MatchGames.
-  - Abra o terminal integrado.
   - Navegue até o diretório do projeto:
+```bash
+cd MatchGames
+```
+
 ```bash
 cd "Trabalho de Sexta-Feira"
 ```
   - Certifique-se de que o pip esteja instalado e/ou atualizado
 ```
-python -m pip install --upgrade pip
+python3 -m pip install --upgrade pip
 ```
   - Instale as dependências necessárias com:
 ```bash
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 ```
   - Execute a aplicação localmente:
 ```bash
-python app.py
+python3 app.py
 ```
   - A aplicação será carregada no navegador, e você poderá usufruir de suas funcionalidades.
