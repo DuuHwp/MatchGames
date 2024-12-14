@@ -44,7 +44,8 @@ with app.app_context():
 
 @app.route('/')
 def menu():
-    return render_template('menu.html')
+    return "Hello, World"
+   # return render_template('menu.html')
 
 @app.route('/aila.html')
 def aila():
