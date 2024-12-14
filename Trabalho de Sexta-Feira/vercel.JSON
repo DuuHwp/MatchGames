@@ -10,39 +10,39 @@
     {
       "src": "/",
       "dest": "/menu.html"
-    }
+    },
     {
       "src": "/enviar",
       "dest": "/sucesso.html"
-    }
+    },
     {
       "src": "/aila.html",
       "dest": "/aila.html"
-    }
+    },
     {
       "src": "/witcher.html",
       "dest": "/witcher.html"
-    }
+    },
     {
       "src": "/cod.html",
       "dest": "/cod.html"
-    }
+    },
     {
       "src": "/fobia.html",
       "dest": "/fobia.html"
-    }
+    },
     {
       "src": "/re4.html",
       "dest": "/re4.html"
-    }
+    },
     {
       "src": "/rd2.html",
       "dest": "/rd2.html"
-    }
+    },
     {
       "src": "/cyberpunk.html",
       "dest": "/cyberpunk.html"
-    }
+    },
     {
       "src": "/ajuda.html",
       "dest": "/ajuda.html"
