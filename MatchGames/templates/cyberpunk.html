@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/styles/reset.css">
+    <link rel="stylesheet" href="../static/styles/cyberpunk.css">
+    <title>Cyberpunk 2077</title>
+</head>
+<body>
+    <button class="botao-voltar" onclick="window.location.href='/';">
+        &#8592;
+    </button>
+    <h1 class="titulo">Cyberpunk 2077</h1>
+    <div class="container-botoes">    
+        <button class="button" onclick="toggleBox('texto1', this)">
+            REQUISITOS MÍNIMOS <span class="seta">&#9654;</span>
+        </button>
+        <div id="texto1" class="caixa-texto">
+            <p> Requer um processador e sistema operacional de 64 bits</p>
+            <br>
+            <p> Sistema Operacional: Windows 10 - 64-bit</p>
+            <br>
+            <p> Processador: Core i7-6700 or Ryzen 5 1600</p>
+            <br>
+            <p> Memória RAM: 12 GB de RAM</p>
+            <br>
+            <p> Placa de vídeo: GeForce GTX 1060 6GB or Radeon RX 580 8GB or Arc A380</p>
+            <br>
+            <p> DirectX: Versão 12</p>
+            <br>
+            <p> Armazenamento: 70 GB de espaço disponível</p>
+            <br>
+            <p> Outras observações: necessita de SSD.</p>
+            
+        </div>
+    
+        <button class="button" onclick="toggleBox('texto2', this)">
+            REQUISITOS RECOMENDADOS <span class="seta">&#9654;</span>
+        </button>
+        <div id="texto2" class="caixa-texto">
+            <p> Requer um processador e sistema operacional de 64 bits</p>
+            <br>
+            <p> Sistema Operacional: Windows 10 - 64-bit</p>
+            <br>
+            <p> Processador: Core i7-12700 or Ryzen 7 7800X3D</p>
+            <br>
+            <p> Memória RAM: 16 GB de RAM</p>
+            <br>
+            <p> Placa de vídeo: GeForce RTX 2060 SUPER or Radeon RX 5700 XT or Arc A770</p>
+            <br>
+            <p> DirectX: Versão 12</p>
+            <br>
+            <p> Armazenamento: 70 GB de espaço disponível</p>
+            <br>
+            <p> Outras observações: necessita de SSD.</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleBox(boxId, button) {
+            const caixas = document.querySelectorAll('.caixa-texto');
+            const setas = document.querySelectorAll('.button .seta');
+            const box = document.getElementById(boxId);
+            const seta = button.querySelector('.seta');
+        
+            if (box.classList.contains('show')) {
+                box.classList.remove('show');
+                seta.style.transform = 'rotate(0deg)';
+            } else {
+                caixas.forEach(caixa => caixa.classList.remove('show'));
+                setas.forEach(seta => seta.style.transform = 'rotate(0deg)'); 
+                box.classList.add('show');
+                seta.style.transform = 'rotate(90deg)';
+            }
+        }
+    </script>
+</body>
+</html>

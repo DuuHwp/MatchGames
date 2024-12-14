@@ -1,0 +1,88 @@
+body{
+    background-image: url('../Assets/warzone.jpeg');
+    background-size: 100%;
+    background-position-y: 0px ;   
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: top;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(18, 13, 1);
+    color: white;
+}
+.container-botoes {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    margin-right: 20px;
+}
+
+.titulo {
+    font-size: 40px;
+    text-align: center; 
+    margin-top: 20px; 
+    margin-bottom: 40px; 
+    color: white;
+    font-weight: bold;
+}
+.button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    align-items: flex-start;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 45%;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.1); 
+    justify-content: space-between;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.caixa-texto {
+    width: 80%;
+    margin-top: 10px;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    max-height: 0; 
+    opacity: 0; 
+    transition: max-height 0.3s ease, opacity 0.3s ease; 
+    font-weight: bold;
+}
+
+.caixa-texto.show {
+    max-height: 200px; 
+    opacity: 1; 
+}
+
+.seta {
+    display: inline-block;
+    margin-left: 10px;
+    transition: transform 0.3s ease; 
+}
+.botao-voltar {
+    position: fixed; 
+    top: 10px;
+    left: 10px;
+    font-size: 24px; 
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.botao-voltar:hover {
+    color: rgba(255, 255, 255, 0.7); 
+}
