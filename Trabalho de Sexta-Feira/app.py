@@ -43,9 +43,8 @@ with app.app_context():
     db.create_all()
 
 @app.route('/')
-def menu():
-    return "Hello, World"
-   # return render_template('menu.html')
+def menu():    
+   return render_template('menu.html')
 
 @app.route('/aila.html')
 def aila():
