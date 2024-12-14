@@ -1,13 +1,12 @@
 from flask import Flask, render_template, request, redirect, url_for
 from flask_sqlalchemy import SQLAlchemy
+import os
 
 app = Flask(__name__)
 
 # conexão com banco de dados
-
-
-# Configuração da URI de conexão com o PostgreSQL
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgresaula:PostgresAula123!@postgres-aula.cuebxlhckhcy.us-east-1.rds.amazonaws.com:5432/postgresaula'
+# Usando a variável de ambiente para configurar a URI do banco
+app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('SQLALCHEMY_DATABASE_URI')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 # Criação do objeto SQLAlchemy
