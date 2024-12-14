@@ -5,8 +5,7 @@ import os
 app = Flask(__name__)
 
 # conexão com banco de dados
-# Usando a variável de ambiente para configurar a URI do banco
-app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('SQLALCHEMY_DATABASE_URI')
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgresaula:PostgresAula123!@postgres-aula.cuebxlhckhcy.us-east-1.rds.amazonaws.com:5432/postgresaula'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 # Criação do objeto SQLAlchemy
